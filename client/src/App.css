@@ -1,0 +1,12 @@
+.App{
+  height: 100vh;
+  background-image: url("./img/cactus.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#authentication {
+  box-shadow: 1px 1px 10px #0007
+}
