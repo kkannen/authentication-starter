@@ -21,7 +21,7 @@ class App extends Component {
         authenticationError: "Passwords do not Match"
       })
     } else {
-      fetch("/users", {
+      fetch("/api/users", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(credentials)
@@ -51,7 +51,7 @@ class App extends Component {
         authenticationError: 'Must Provide All Fields'
       });
     } else {
-      fetch("/sessions", {
+      fetch("/api/sessions", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(credentials)

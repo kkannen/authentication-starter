@@ -8,7 +8,7 @@ app.use(express.static("public"));
 app.use(bodyParser.json());
 app.use(require("./routes/UserRoutes"));
 app.use(require("./routes/SessionRoutes"));
-//app.use(require("./routes/AuthenticationRoutes"));
+app.use(require("./routes/AuthenticationRoutes"));
 
 
 mongoose.set("debug", true);
